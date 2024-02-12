@@ -1,0 +1,78 @@
+>>very first you need to write "npm init" to get "package.json" file
+
+>>npm stands for node package manager
+>>json stands for javascript object notation
+
+>>first you need to write "node filename(server.js)" to run the server
+then you go to browser and run the server with port number
+
+>>in javascript the very first time started version is known as vannila
+
+>>in nodejs we use keyword require for to import the modules then access the function 
+(import os from "os")
+
+>>const path = require("path")
+console.log(path.dirname(__filename))
+the above example is used show the path of  file name dircetory
+
+>>console.log(path.parse(__filename))
+the above example parse is used to shown the complete object of the file name like root,ext,dir,base,name
+
+>>if you create a new file(math.js) in nodejs how you import that file in main file?
+        it is possible by const math = require("./math")
+here is an example 
+        filename---math.js----
+const.add=(a,b)=>a+b;
+module.exports ={add}//it is use to export the file which mean ethrumathi
+
+        filename---server.js----
+const math= require("./math");
+console.log(math.add(2,3))
+
+
+>>HTTP response status codes
+HTTP response status codes indicate whether a specific HTTP request has been successfully completed.
+Responses are grouped in five classes:
+
+Informational responses (100 – 199)
+Successful responses (200 – 299)
+Redirection messages (300 – 399)
+Client error res ponses (400 – 499)
+Server error responses (500 – 599)
+
+>>url for http response
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+
+>>in package.json you can overwrite the script,instead of previous one you can write "start" : "node server.js"
+because you don't need to wwrite node server.js again and again in terminal, by using script you use write just"npm start" 
+in terminal
+
+>>Nodemon-It is use to auto retart the node application when changes have done in code, 
+by use nodemon we don't need to kill and start our application again and again.
+We need nodemon you must install it buy usind "npm i nodemon" in your terminal
+
+>>By installing nodemon is not only enough to run appilation automatically, you need to add some stuff
+in package.json in script "dev":"nodemon server.js" if you want to use nodemon in terminal to run 
+application just write "npm run dev" if you write one time that enough if you save your changes in code 
+it automatically run your node application
+
+>>HTTp methods
+GET-It is used for getting any kind of data from the server
+POST-It is used to push/send data to the server 
+DELETE-Deleting the data from server
+PATCH-It is used to update the certain fields
+PUT-It is used to update a huge fields
+
+>>the GET method only work on browser others not
+>>if you want to work others why we use thunder extention
+
+>>res.writeHead()-it is use to http response eg:-res.writeHead(200)
+>>res.write()-it is used to get output in browser
+
+>>use thunder client to access different methods like post delete put patch
+
+>>API-Application Programming INterface, if you run your application you need API
+because api intract with frontend and backend 
+eg:-if you get data from database to the UI you can get data with the help of API
+
+
