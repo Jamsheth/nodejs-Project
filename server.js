@@ -57,17 +57,17 @@ http
 
             // for (let i = 0; i < array.length; i++) {
             //   if (array[i] === deleteitem) {
-                // array.splice(i, 1); //splice method is used to remove the element
-                // break; // this is for break the loop
-              // }
+            // array.splice(i, 1); //splice method is used to remove the element
+            // break; // this is for break the loop
+            // }
             // }
 
             //another method
-            array.find((element,index)=>{
-              if(element===deleteitem){
-                array.splice(index,1)
+            array.find((element, index) => {
+              if (element === deleteitem) {
+                array.splice(index, 1);
               }
-            })
+            });
           });
       } else {
         res.writeHead(404);
